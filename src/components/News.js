@@ -13,7 +13,7 @@ export default class News extends Component {
   }
   async componentDidMount(){
     //this runs after the render gets excuted
-    let url="https://newsapi.org/v2/top-headlines?country=in&apiKey=2204c9fb6662444b846d63771d2c3d8a"
+    let url="https://newsapi.org/v2/top-headlines?country=us&apiKey=8db92fc59e364d5f81bb07718c602a0f"
     let data = await fetch(url)
     let parsedData = await data.json()
     console.log(parsedData);
